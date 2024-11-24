@@ -103,7 +103,7 @@
 @media screen and (max-width: 300px) 
 { 
     body{
-        display:flex;
+        .header { flex-direction: column; align-items: flex-start; } .navbar { display: flex; flex-direction: column; width: 100%; } .navbar a { margin: 5px 0; } .home { flex-direction: column; } .home-image, .home-content { flex
     }
 }
 

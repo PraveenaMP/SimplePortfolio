@@ -68,50 +68,6 @@
     border-radius: 50%;
     overlay: auto;
 }
-
-.home-content{
-    max-width: 600px;
-    color: #fff;
-    text-align: right;
-}
-
-.home-content h1{
-    font-size: 30px;
-    line-height: 1.2;
-}
-
-.home-content h3{
-    font-size: 23px;
-    color: transparent;
-    -webkit-text-stroke: .5px #fff;
-    background-image: linear-gradient(#00abf0,#00abf0);
-    background-repeat: no-repeat;
-    -webkit-background-clip:text;
-    background-position: -350px 0;
-    animation: animateText 6s linear infinite;
-}
-
-@keyframes animateText {
-    0%,95%,100%{
-        background-position: -410px 0;
-    }
-    65%,85% {
-        background-position: 0 0;
-    }
-}
-
-@media screen and (max-width: 300px) 
-{ 
-    body{
-        .header { flex-direction: column; align-items: flex-start; } .navbar { display: flex; flex-direction: column; width: 100%; } .navbar a { margin: 5px 0; } .home { flex-direction: column; } .home-image, .home-content { flex
-    }
-}
-
-.home-content p{
-      font-size: 14px;
-      margin-top: 20px;
-}
-
 .home-sci {
     margin: 25px 0 40px;
 }
@@ -136,4 +92,81 @@
     color: #fff;
     border-color: #00abf0;
     box-shadow: 0 0 10px #00abf0;
+}
+.home-content{
+    max-width: 600px;
+    color: #fff;
+    text-align: right;
+}
+
+.home-content h1{
+    font-size: 30px;
+    line-height: 1.2;
+}
+.home-content p{
+      font-size: 14px;
+      margin-top: 20px;
+}
+.home-content h3{
+    font-size: 23px;
+    color: transparent;
+    -webkit-text-stroke: .5px #fff;
+    background-image: linear-gradient(#00abf0,#00abf0);
+    background-repeat: no-repeat;
+    -webkit-background-clip:text;
+    background-position: -350px 0;
+    animation: animateText 6s linear infinite;
+}
+
+@keyframes animateText {
+    0%,95%,100%{
+        background-position: -410px 0;
+    }
+    65%,85% {
+        background-position: 0 0;
+    }
+}
+@media screen and (max-width:800px){
+    .header{
+        flex-basis: 50%;
+    }
+    .logo{
+        font-size: 15px;
+    }
+    .navbar a{
+        font-size: 10px;
+    }
+    .home{
+        flex-basis: 50%;
+        flex-wrap: nowrap;
+    }
+    .home-image{
+        width: 250px;
+        height: 250px;
+    }
+    .home-image img{
+        position: relative;
+        bottom: 7px;
+        right: 7px;
+        width: 250px;
+        height: 220px;
+    }
+    .home-content{
+        text-align: right;
+    }
+    .home-content h1{
+        font-size: 17px;
+    }
+    .home-content h3{
+        font-size: 12px;
+    }
+    .home-content p{
+        font-size: 10px;
+    }
+    .home-sci a{
+        width: 22px;
+        height: 22px;
+        font-size: 10px;
+    }
+
 }

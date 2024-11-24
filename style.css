@@ -8,6 +8,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+@media (min-width: 600px) {
+    main {
+      flex-wrap: nowrap;
+    }
+
+    div {
+      flex-basis: 33%;
+    }
+  }
+
 .header {
     position: fixed;
     top: 0;

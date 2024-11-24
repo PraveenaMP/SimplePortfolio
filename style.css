@@ -8,13 +8,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
     main {
       flex-wrap: nowrap;
     }
 
-    div {
-      flex-basis: 60%;
+     body {
+      flex-basis: 30%;
     }
   }
 

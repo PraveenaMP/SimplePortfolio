@@ -7,17 +7,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
-@media (min-width: 600px) {
-    main {
-      flex-wrap: nowrap;
-    }
-
-     body {
-      flex-basis: 30%;
-    }
-  }
-
 .header {
     position: fixed;
     top: 0;
